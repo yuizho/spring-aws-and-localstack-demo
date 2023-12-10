@@ -15,6 +15,7 @@
     <description>spring-aws-and-localstack-demo</description>
     <properties>
         <java.version>21</java.version>
+        <jackson.version>2.16.0</jackson.version>
     </properties>
 
     <dependencyManagement>
@@ -59,6 +60,17 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-docker-compose</artifactId>
             <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-csv</artifactId>
+            <version>${jackson.version}</version>
         </dependency>
 
         <dependency>
